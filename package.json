@@ -1,0 +1,24 @@
+{
+  "name": "proto-webpack-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bartekupartek/proto-webpack-plugin.git"
+  },
+  "keywords": [
+    "webpack",
+    "protobuf",
+    "proto"
+  ],
+  "author": "Bartłomiej Różański",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bartekupartek/proto-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/bartekupartek/proto-webpack-plugin#readme"
+}
