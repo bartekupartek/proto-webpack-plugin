@@ -2,7 +2,8 @@ var pbjs = require('protobufjs/cli/pbjs'),
     glob = require('glob')
 
 function ProtoWebpackPlugin(options) {
-  var files = glob.sync('*.proto', { cwd: options.resolveDir, absolute: true, matchBase: true })
+  var pattern = options.matchFiles ? '@(' + options.matchFiles.join('|') + ')' : '*.proto'
+  var files = glob.sync(pattern, { cwd: options.resolveDir, absolute: true, matchBase: true })
   pbjs.main(['-t', 'json-module', '-w', 'commonjs', '-o', options.outputFile].concat(files), function(err, output) {
     if (err) { throw err; }
   });
